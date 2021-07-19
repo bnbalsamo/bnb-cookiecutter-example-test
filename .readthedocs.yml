@@ -14,10 +14,12 @@ sphinx:
 # Install pinned project requirements (if they exist)
 # Install the package with pip
 python:
-  version: 3.8
+  version: 3.9
   install:
     - method: pip
       path: .
+      extra_requirements:
+        - docs
 
 # Build docs in all formats
 formats: all

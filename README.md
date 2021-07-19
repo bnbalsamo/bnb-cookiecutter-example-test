@@ -29,7 +29,7 @@ To install + configure a development environment...
 - `cd` into the project directory
     - `cd bnb-cookiecutter-example-test`
 - Install the project and development dependencies with poetry
-    - `poetry install`
+    - `poetry install -E docs -E tests`
 - Activate the project's virtual environment in your current shell
     - `poetry shell`
 - Install the pre-commit hooks
