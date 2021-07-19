@@ -17,7 +17,7 @@ This project is currently only installable via development tooling.
 - Install [poetry](https://python-poetry.org/)
 - ```$ git clone https://github.com/bnbalsamo/bnb-cookiecutter-example-test.git```
 - ```$ cd bnb-cookiecutter-example-test```
-- ```$ poetry install . --no-dev```
+- ```$ poetry install --no-dev```
 
 # Development
 
@@ -25,11 +25,11 @@ To install + configure a development environment...
 
 - Install [poetry](https://python-poetry.org/)
 - Clone the repository
-    - `git@github.com:bnbalsamo/bnb-cookiecutter-example-test.git`
+    - `git clone git@github.com:bnbalsamo/bnb-cookiecutter-example-test.git`
 - `cd` into the project directory
     - `cd bnb-cookiecutter-example-test`
 - Install the project and development dependencies with poetry
-    - `poetry install .`
+    - `poetry install`
 - Activate the project's virtual environment in your current shell
     - `poetry shell`
 - Install the pre-commit hooks
