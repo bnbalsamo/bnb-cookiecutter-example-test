@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "bnb-cookiecutter-example-test"
+version = "0.1.0"
+description = "A project."
+authors = ["First Last  <you@provider.com>"]
+readme = "README.md"
+homepage = "https://github.com/bnbalsamo/bnb-cookiecutter-example-test"
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+build = ">=0.5.0"
+bump2version = "*"
+invoke = "^1"
+mypy = ">=0.910"
+nox = "*"
+packaging = "*"
+pre-commit = "^2.9.2"
+pylint = "*"
+pytest = "*"
+pytest-cov = "*"
+safety = "*"
+shiv = ">=0.5.2"
+sphinx = "*"
+sphinx-autobuild = "*"
+sphinx-autodoc-typehints = "*"
+sphinx-rtd-theme = "*"
+twine = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.coverage.run]
+source = ["bnb_cookiecutter_example_test"]
+
+[tool.coverage.report]
+fail_under = 80
+
+[tool.coverage.paths]
+source = [
+   "src",
+   ".tox/*/site-packages"
+]
+
+[tool.mypy]
+warn_unused_configs = true
+check_untyped_defs = true
